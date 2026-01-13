@@ -45,7 +45,7 @@ export const Login: React.FC = () => {
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                                    className="w-full pl-10 pr-4 py-2.5 text-slate-300 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
                                     placeholder="name@company.com"
                                     required
                                 />
@@ -60,7 +60,7 @@ export const Login: React.FC = () => {
                                     type="password"
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
-                                    className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                                    className="w-full pl-10 pr-4 py-2.5 text-slate-300 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
                                     placeholder="••••••••"
                                     required
                                 />
@@ -73,7 +73,7 @@ export const Login: React.FC = () => {
                                 type="text"
                                 value={tenantId}
                                 onChange={(e) => setTenantId(e.target.value)}
-                                className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                                className="w-full px-4 py-2.5 text-slate-300 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
                                 placeholder="e.g. tenant-123"
                             />
                         </div>

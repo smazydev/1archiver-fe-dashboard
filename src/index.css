@@ -72,4 +72,14 @@ button:focus-visible {
     button {
         background-color: #f9f9f9;
     }
+
+    .hide-scrollbar {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
 }
