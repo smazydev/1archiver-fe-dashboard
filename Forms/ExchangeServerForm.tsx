@@ -29,7 +29,7 @@ const ExchangeServerForm = () => {
                 <select name="mailboxAccessScope" id="mailboxAccessScope" className="border-slate-900 border rounded-lg p-2 bg-slate-200 w-full">
                     <option value="Single Mailbox">Single Mailbox</option>
                     <option value="Multiple Mailboxes">Multiple Mailboxes</option>
-                    <option value="All Mailboxes">All Mailboxes (impersonation)</option>
+                    <option value="All Mailboxes">All Mailboxes</option>
                 </select>
                 <label htmlFor="primaryMailbox">Primary Mailbox Email</label>
                 <input showonlyif="mailboxAccessScope === 'Single Mailbox'" type="email" id="primaryMailbox" name="primaryMailbox" className="border-slate-900 border rounded-lg p-2 bg-slate-200 w-full" />

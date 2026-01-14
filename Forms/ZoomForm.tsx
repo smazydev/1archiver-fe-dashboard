@@ -15,9 +15,23 @@ const ZoomForm = () => {
                 <Button value="sign-in-with-zoom" name="sign-in-with-zoom" className="w-full">Sign-in with Zoom</Button>
                 <label htmlFor="zoomAccountID">Zoom Account ID</label>
                 <input type="text" id="zoomAccountID" name="zoomAccountID" className="border-slate-900 border rounded-lg p-2 bg-slate-200 w-full" />
-                <label htmlFor="accessScope">Access Scope</label>
-                <input type="checkbox" id="accessScope" name="accessScope" value="chat messages" className="border-slate-900 border rounded-lg p-2 bg-slate-200" />Chat Messages
-                <input type="checkbox" id="accessScope" name="accessScope" value="meetings" className="border-slate-900 border rounded-lg p-2 bg-slate-200" />Meetings
+                <fieldset className="flex flex-col gap-2">
+                    <legend className="font-medium mb-2">Access Scope</legend>
+
+                    <label htmlFor="chat messages" className="flex items-center gap-2">
+                        <input type="checkbox" id="chat messages"
+                            name="chat messages" value="chat messages"
+                            className="border-slate-900 border rounded bg-slate-200" />
+                        Chat Messages
+                    </label>
+
+                    <label htmlFor="meetings" className="flex items-center gap-2">
+                        <input type="checkbox" id="meetings"
+                            name="meetings" value="meetings"
+                            className="border-slate-900 border rounded bg-slate-200" />
+                        Meetings
+                    </label>
+                </fieldset>
                 <Button type="submit">Submit</Button>
             </form>
         </div>

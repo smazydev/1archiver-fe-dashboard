@@ -15,10 +15,43 @@ const MicrosoftTeamsForm = () => {
                 <Button value="sign-in-with-microsoft" name="sign-in-with-microsoft" className="w-full">Sign-in with Microsoft Teams</Button>
                 <label htmlFor="tenantID">Tenant ID</label>
                 <input type="text" id="tenantID" name="tenantID" className="border-slate-900 border rounded-lg p-2 bg-slate-200 w-full" />
-                <label htmlFor="accessScope">Access Scope</label>
-                <input type="checkbox" id="teams" name="teams" value="teams" className="border-slate-900 border rounded-lg p-2 bg-slate-200" />Teams
-                <input type="checkbox" id="channels" name="channels" value="channels" className="border-slate-900 border rounded-lg p-2 bg-slate-200" />Channels
-                <input type="checkbox" id="chats" name="chats" value="chats" className="border-slate-900 border rounded-lg p-2 bg-slate-200" />Chats
+                <fieldset className="flex flex-col gap-2">
+                    <legend className="font-medium mb-2">Access Scope</legend>
+
+                    <label htmlFor="teams" className="flex items-center gap-2">
+                        <input
+                            type="checkbox"
+                            id="teams"
+                            name="accessScope"
+                            value="teams"
+                            className="border-slate-900 border rounded bg-slate-200"
+                        />
+                        Teams
+                    </label>
+
+                    <label htmlFor="channels" className="flex items-center gap-2">
+                        <input
+                            type="checkbox"
+                            id="channels"
+                            name="accessScope"
+                            value="channels"
+                            className="border-slate-900 border rounded bg-slate-200"
+                        />
+                        Channels
+                    </label>
+
+                    <label htmlFor="chats" className="flex items-center gap-2">
+                        <input
+                            type="checkbox"
+                            id="chats"
+                            name="accessScope"
+                            value="chats"
+                            className="border-slate-900 border rounded bg-slate-200"
+                        />
+                        Chats
+                    </label>
+                </fieldset>
+
                 <Button type="submit">Submit</Button>
             </form>
         </div>

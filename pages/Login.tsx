@@ -47,7 +47,7 @@ export const Login: React.FC = () => {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                                    placeholder="name@company.com text-slate-400"
+                                    placeholder="name@company.com"
                                     required
                                 />
                             </div>
@@ -63,7 +63,7 @@ export const Login: React.FC = () => {
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
                                     className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                                    placeholder="•••••••• text-slate-400"
+                                    placeholder="••••••••"
                                     required
                                 />
                             </div>
@@ -77,7 +77,7 @@ export const Login: React.FC = () => {
                                 value={tenantId}
                                 onChange={(e) => setTenantId(e.target.value)}
                                 className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                                placeholder="e.g. tenant-123 text-slate-400"
+                                placeholder="e.g. tenant-123"
                             />
                         </div>
 
