@@ -42,11 +42,12 @@ export const Login: React.FC = () => {
                             <div className="relative">
                                 <Mail className="absolute left-3 top-3 w-5 h-5 text-slate-400" />
                                 <input
+                                    name="email"
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    className="w-full pl-10 pr-4 py-2.5 text-slate-300 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                                    placeholder="name@company.com"
+                                    className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                                    placeholder="name@company.com text-slate-400"
                                     required
                                 />
                             </div>
@@ -57,11 +58,12 @@ export const Login: React.FC = () => {
                             <div className="relative">
                                 <Lock className="absolute left-3 top-3 w-5 h-5 text-slate-400" />
                                 <input
+                                    name="password"
                                     type="password"
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
-                                    className="w-full pl-10 pr-4 py-2.5 text-slate-300 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                                    placeholder="••••••••"
+                                    className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                                    placeholder="•••••••• text-slate-400"
                                     required
                                 />
                             </div>
@@ -70,11 +72,12 @@ export const Login: React.FC = () => {
                         <div>
                             <label className="block text-sm font-medium text-slate-700 mb-1.5">Tenant ID (Optional)</label>
                             <input
+                                name="tenantId"
                                 type="text"
                                 value={tenantId}
                                 onChange={(e) => setTenantId(e.target.value)}
-                                className="w-full px-4 py-2.5 text-slate-300 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                                placeholder="e.g. tenant-123"
+                                className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                                placeholder="e.g. tenant-123 text-slate-400"
                             />
                         </div>
 

@@ -27,25 +27,10 @@ const DataSourcesPage = ({ mailboxesLoading, mailboxes }: Props) => {
 
     const [integrationType, setIntegrationType] = useState<IntegrationType>(null);
 
-    const toggleExchangeServerForm = () => {
-        integrationType ? setIntegrationType(null) : setIntegrationType("Exchange Server On-Premises");
+    const toggleIntegration = (type: IntegrationType) => {
+        setIntegrationType(prev => (prev === type ? null : type));
     };
 
-    const toggleGmailForm = () => {
-        integrationType ? setIntegrationType(null) : setIntegrationType("Gmail");
-    };
-
-    const toggleSlackForm = () => {
-        integrationType ? setIntegrationType(null) : setIntegrationType("Slack");
-    };
-
-    const toggleMicrosoftTeamsForm = () => {
-        integrationType ? setIntegrationType(null) : setIntegrationType("Microsoft Teams");
-    };
-
-    const toggleZoomForm = () => {
-        integrationType ? setIntegrationType(null) : setIntegrationType("Zoom");
-    };
 
     return (
         <div className="space-y-6">
@@ -66,35 +51,35 @@ const DataSourcesPage = ({ mailboxesLoading, mailboxes }: Props) => {
 
                             <ul className="space-y-4">
                                 <li
-                                    onClick={toggleExchangeServerForm}
+                                    onClick={() => toggleIntegration("Exchange Server On-Premises")}
                                     className="cursor-pointer hover:text-slate-300"
                                 >
                                     Exchange Server On-Premises
                                 </li>
 
                                 <li
-                                    onClick={toggleGmailForm}
+                                    onClick={() => toggleIntegration("Gmail")}
                                     className="cursor-pointer hover:text-slate-300"
                                 >
                                     Gmail
                                 </li>
 
                                 <li
-                                    onClick={toggleSlackForm}
+                                    onClick={() => toggleIntegration("Slack")}
                                     className="cursor-pointer hover:text-slate-300"
                                 >
                                     Slack
                                 </li>
 
                                 <li
-                                    onClick={toggleMicrosoftTeamsForm}
+                                    onClick={() => toggleIntegration("Microsoft Teams")}
                                     className="cursor-pointer hover:text-slate-300"
                                 >
                                     Microsoft Teams
                                 </li>
 
                                 <li
-                                    onClick={toggleZoomForm}
+                                    onClick={() => toggleIntegration("Zoom")}
                                     className="cursor-pointer hover:text-slate-300"
                                 >
                                     Zoom

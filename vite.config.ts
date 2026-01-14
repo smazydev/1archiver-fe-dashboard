@@ -20,7 +20,6 @@ export default defineConfig(({ mode }) => {
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
       // Debug log to verify env vars are loaded
-      __APP_ENV__: JSON.stringify(env),
     },
     resolve: {
       alias: {

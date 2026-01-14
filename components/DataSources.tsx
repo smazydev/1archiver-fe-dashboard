@@ -44,7 +44,7 @@ export const DataSources = ({
                                         {mb.email_address}
                                     </td>
                                     <td className="p-4 capitalize">
-                                        {mb.source_type.replace("_", " ")}
+                                        {mb.source_type.replace(/_/g, " ")}
                                     </td>
                                     <td className="p-4">
                                         <Badge variant="success">Healthy</Badge>
