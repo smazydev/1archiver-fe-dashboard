@@ -18,23 +18,23 @@ const SlackForm = () => {
                 <fieldset className="flex flex-col gap-2">
                     <legend className="font-medium mb-2">Access Scope</legend>
 
-                    <label htmlFor="public channels" className="flex items-center gap-2">
-                        <input type="checkbox" id="public channels"
-                            name="public channels"
+                    <label htmlFor="public-channels" className="flex items-center gap-2">
+                        <input type="checkbox" id="public-channels"
+                            name="public-channels"
                             className="border-slate-900 border rounded-lg p-2 bg-slate-200" />
                         Public Channels
                     </label>
 
-                    <label htmlFor="private channels" className="flex items-center gap-2">
-                        <input type="checkbox" id="private channels"
-                            name="private channels"
+                    <label htmlFor="private-channels" className="flex items-center gap-2">
+                        <input type="checkbox" id="private-channels"
+                            name="private-channels"
                             className="border-slate-900 border rounded-lg p-2 bg-slate-200" />
                         Private Channels
                     </label>
 
-                    <label htmlFor="direct messages" className="flex items-center gap-2">
-                        <input type="checkbox" id="direct messages"
-                            name="direct messages"
+                    <label htmlFor="direct-messages" className="flex items-center gap-2">
+                        <input type="checkbox" id="direct-messages"
+                            name="direct-messages"
                             className="border-slate-900 border rounded-lg p-2 bg-slate-200" />
                         Direct Messages
                     </label>

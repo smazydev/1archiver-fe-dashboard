@@ -18,9 +18,9 @@ const ZoomForm = () => {
                 <fieldset className="flex flex-col gap-2">
                     <legend className="font-medium mb-2">Access Scope</legend>
 
-                    <label htmlFor="chat messages" className="flex items-center gap-2">
-                        <input type="checkbox" id="chat messages"
-                            name="chat messages" value="chat messages"
+                    <label htmlFor="chat-messages" className="flex items-center gap-2">
+                        <input type="checkbox" id="chat-messages"
+                            name="chat-messages" value="chat-messages"
                             className="border-slate-900 border rounded bg-slate-200" />
                         Chat Messages
                     </label>
