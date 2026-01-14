@@ -42,6 +42,7 @@ export const Login: React.FC = () => {
                             <div className="relative">
                                 <Mail className="absolute left-3 top-3 w-5 h-5 text-slate-400" />
                                 <input
+                                    name="email"
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
@@ -57,6 +58,7 @@ export const Login: React.FC = () => {
                             <div className="relative">
                                 <Lock className="absolute left-3 top-3 w-5 h-5 text-slate-400" />
                                 <input
+                                    name="password"
                                     type="password"
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
@@ -70,6 +72,7 @@ export const Login: React.FC = () => {
                         <div>
                             <label className="block text-sm font-medium text-slate-700 mb-1.5">Tenant ID (Optional)</label>
                             <input
+                                name="tenantId"
                                 type="text"
                                 value={tenantId}
                                 onChange={(e) => setTenantId(e.target.value)}

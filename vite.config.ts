@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
       host: '0.0.0.0',
       proxy: {
         '/api': {
-          target: 'http://localhost:8080',
+          target: env.VITE_API_TARGET || 'http://localhost:8080',
           changeOrigin: true,
           secure: false,
         }
@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
+      // Debug log to verify env vars are loaded
     },
     resolve: {
       alias: {

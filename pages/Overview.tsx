@@ -141,7 +141,7 @@ export const Overview: React.FC = () => {
             )}
           </div>
           <div className="mt-4 pt-3 border-t border-slate-100">
-            <button className="text-sm font-medium text-blue-700 hover:text-blue-800">View System Log &rarr;</button>
+            <button className="text-sm font-medium text-slate-400 hover:text-blue-800">View System Log &rarr;</button>
           </div>
         </Card>
       </div>
